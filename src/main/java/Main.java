@@ -60,6 +60,8 @@ public class Main {
         }
         if(2*aVote<listOfBallots.size()){
             return "B";
+
+
         }
         return null;
 
