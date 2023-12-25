@@ -10,8 +10,6 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("alma");
     }
-
-
     static String conferencePicker(String[] citiesVisited, String[] citiesOffered) {
         return Arrays.stream(citiesOffered).filter(c -> !Arrays.asList(citiesVisited).contains(c)).findFirst().orElse("No worthwhile conferences this year!");
     }
@@ -26,7 +24,6 @@ public class Main {
                 return "longer";
         }
     }
-
     public static int solve(int[] arr) {
         List<Integer> primes = new ArrayList<>();
         int sum = 0;
