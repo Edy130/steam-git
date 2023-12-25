@@ -7,8 +7,10 @@ import java.util.List;
 
 public class Main {
 
+
     public static void main(String[] args) {
         System.out.println("alma");
+        System.out.println("alma2");
     }
     static String conferencePicker(String[] citiesVisited, String[] citiesOffered) {
         return Arrays.stream(citiesOffered).filter(c -> !Arrays.asList(citiesVisited).contains(c)).findFirst().orElse("No worthwhile conferences this year!");
