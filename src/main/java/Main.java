@@ -35,8 +35,6 @@ public class Main {
         }
         return sum;
     }
-
-
     public static Integer chooseBestSum(int t, int k, List<Integer> ls) {
         int sum = 0;
         for (int i = 0; i < ls.size() - 2; i++) {
@@ -51,7 +49,6 @@ public class Main {
         }
         return sum == 0 ? null : sum;
     }
-
     public static String getWinner(final List<String> listOfBallots) {
         int aVote =(int) listOfBallots.stream().filter(v->v.equalsIgnoreCase("a")).count();
         int bVote =(int) listOfBallots.stream().filter(v->v.equalsIgnoreCase("b")).count();
